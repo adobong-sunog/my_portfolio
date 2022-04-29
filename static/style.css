@@ -1,0 +1,261 @@
+.main-view {
+    display: flex;
+}
+
+.card.text-center {
+    background-color: #212529;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(70, 69, 69);
+}
+ 
+i {
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    color: aliceblue;
+}
+
+hr {
+    color: rgb(3, 253, 16);
+    border: solid 5px rgb(3, 253, 16);
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/** Skillsets **/
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background: #212529;
+}
+
+.list {
+    text-align: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+/** Custom animation for nav bar **/
+.nav-link {
+    display: inline-block;
+    margin-block: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(3, 253, 16);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .25s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/** Below navbar **/
+.topSection {
+    background-color: rgb(26, 156, 35);
+    height: 100vh;
+    color: aliceblue;
+}
+
+.typedjs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+/** Social links **/
+.socials {
+    display: inline-block;
+    z-index: 100;
+    top: 50%;
+    position: fixed;
+    left: -8.5rem;
+    -webkit-animation: social-links 0.5s;
+            animation: social-links 0.5s;
+}
+  
+.socials ul {
+    list-style: none;
+}
+
+.socials ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    display: block;
+    width: 175px;
+    text-align: right;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+  
+.socials ul li a i {
+    padding-left: 1.5rem;
+}
+
+.socials ul li .github {
+    background: #2e3031;
+}
+  
+.socials ul li .email {
+    background: red;
+}
+
+.socials ul li a:hover {
+    -webkit-transform: translate(80px, 0);
+            transform: translate(80px, 0);
+}
+
+/** Project cards**/
+.projectcards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Footer **/
+.footer {
+    display:flex;
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    color: aliceblue;
+    background-color: #212529;
+    z-index: 100;
+
+}
+
+/** All button classes **/
+.toAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    animation: goToAbout 5s ease-in-out infinite;
+}
+
+.toAbout:hover {
+    color: #212529;
+}
+
+@keyframes goToAbout {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+.scrollbutton {
+    position: relative;
+}
+
+.scrollup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(3, 194, 13);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 55px;
+    cursor: pointer;
+    animation: movebtn 5s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.icon-style:hover {
+    animation: none;
+    color: rgb(16, 133, 22);
+    border: 2px solid rgb(16, 133, 22);
+}
+
+@keyframes movebtn {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(3px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+/** Images **/
+#skillsetIMG {
+    max-width: 85px;
+    max-height: 85px;
+    height: auto;
+    width: auto;
+}
+
+#projectsIMG {
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    width: auto;
+}
+
+/** Course links **/
+#courseRefs {
+    text-decoration: none;
+    color: rgb(26, 156, 35);
+}

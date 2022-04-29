@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link href="static/style.css" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 100;">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="font-size: 25px;" href="/">Daniel Salvacion</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav list">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skillset">Skillset</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Social links -->
+        <div class="socials" id="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/AncientSoup"
+                  target="_blank"
+                  class="github"
+                  aria-label="GitHub"
+                  rel="noopener"
+                  >GitHub<i class="bi bi-github"></i></a>
+              </li>
+              <li>
+                <a
+                  href="mailto:dailyrackets@gmail.com"
+                  target="_blank"
+                  class="email"
+                  aria-label="Email"
+                  rel="noopener"
+                  >Email<i class="bi bi-envelope-fill"></i></a>
+              </li>
+            </ul>
+        </div>
+
+        <!-- Home view -->
+        <div id="main-view">
+
+            <!-- Typed.js -->
+            <div class="topSection">
+                <br><br><br><br><br>
+                <h1 style="text-align: center; color: aliceblue;">Hello there,</h1>
+                <hr style="color: black; border: solid 5px black; width: 70%; height: 5px;">
+                <br><br>
+                <div class="typedjs">
+                    <h1 style="font-size: 8vh;">I'm a <span class="element"></span></h1>
+                </div>
+                <br><br><br><br><br><br><br>
+                <a  class="toAbout" href="#about"><i class="bi bi-arrow-down-circle-fill" style="font-size: 50px;"></i></a>
+                <br><br>
+                <hr style="color: black; border: solid 5px black; width: 70%; height: 5px; bottom: 0;">
+            </div>
+
+
+            <!-- About -->
+            <br><br><br>
+            <section id="about"></section>
+            <br><br><br><br>
+            <h1 style="text-align: center; color: aliceblue;">About me</h1>
+            <hr>
+            <br><br>
+            <div class="card text-center">
+                <div class="card-body">
+                  <br>
+                  <h3 class="card-title">An aspiring web developer</h3>
+                  <hr><br>
+                  <p class="card-text">I'm currently a student who's also a self-taught back-end developer that ended up picking front-end development skills along the way. I enjoy web development as a whole (slightly more biased towards the back-end). I look forward to improving my web development, specifically programming skills as a whole.
+                  </p>
+                  <p class="card-text">Other things that I enjoy doing are playing musical instruments (guitar & keyboard), reading action and thriller books and playing video games when there's spare time available.</p>
+                  <br>
+                  <h3 class="card-title">Where it all started</h3>
+                  <hr><br>
+                  <p class="card-text">It all started a month after a long school holiday where I got bored after playing video games 24/7 so I started searching about computer science videos in YouTube as I had interest in it after completing a simple python program for my computer science final exam. CS50 lectures by Harvard University showed up on my recommendations a few days later and the momentum of learning computer science began. After completing <a id="courseRefs" href="https://cs50.harvard.edu/x/" target="_blank"><strong>CS50x</strong></a>, I studied back-end development through YouTube videos and other free lectures, was told about <a id="courseRefs" href="https://cs50.harvard.edu/web/" target="_blank"><strong>CS50w</strong></a> and <a id="courseRefs" href="https://www.theodinproject.com" target="_blank"><strong>The Odin Project</strong></a> and that's where my focus on web development started.</p>
+                </div>
+            </div>
+
+            <!-- Skillset -->
+            <br><br><br>
+            <section id="skillset"></section>
+            <br><br><br><br>
+            <h1 style="text-align: center; color: aliceblue;">Skillset</h1>
+            <hr>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="box">
+                        <br>
+                        <h4>Front-end</h4>
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html"> &nbsp;&nbsp;
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="jscript">
+                        <br><br>
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="bootstrap">
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt="vue">
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react">
+
+                    </div>
+                    <div class="box">
+                        <br>
+                        <h4>Back-end</h4>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img id="skillsetIMG" src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="mongodb"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;<img id="skillsetIMG" src="https://miro.medium.com/max/1200/1*1OBwwxzJksMv0YDD-XmyBw.png" alt="django">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img id="skillsetIMG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16jGVAG9pol4earWtTK6iPUB27WUH7c9M_ax-gLB8qqEu8YZDfLbUY2jhd1uDabci3h8&usqp=CAU" alt="postgresql">
+                    </div>
+                    <div class="box">
+                        <br>
+                        <h4>Misc</h4>
+                        <img id="skillsetIMG" src="https://blog.scitools.com/wp-content/uploads/2021/12/Git-Icon-1788C.png" alt="git"> &nbsp;
+                        <img id="skillsetIMG" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
+                        <img id="skillsetIMG" src="https://cdn.freebiesupply.com/logos/large/2x/linux-tux-2-logo-png-transparent.png" alt="linux"> <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="skillsetIMG" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="docker">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <br><br><br>
+            <section id="projects"></section>
+            <br><br><br><br>
+            <h1 style="text-align: center; color: aliceblue;">Projects</h1>
+            <hr>
+
+            <br>
+            <div class="card text-center">
+                <div class="card-body">
+                  <h3 class="card-title">PROJECTS SECTION</h3>
+                  <p class="card-text">TO DO</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        
+        <br><br><br>
+        <div class="scrollbutton">
+            <a href="#" class="scrollup"><i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i></a>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="static/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".element",{
+        strings: ["student.","musician.","programmer."] ,
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+      })
+    </script>
+    </body>
+</html>
