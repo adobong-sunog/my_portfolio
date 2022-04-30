@@ -3,7 +3,7 @@
 * Hosted on: Github Pages
 
 ## Demo:
-https://user-images.githubusercontent.com/72751490/165968194-a1734797-345a-4fd8-a2e1-ea71aa7aa8eb.mp4  
+<img src="https://user-images.githubusercontent.com/72751490/166094591-7e8715a4-89ce-428f-8c9e-d0a0e480be39.gif">
 
 ## Description
 A personal website that was made to show my web projects and also to improve my front-end development skills after focusing on the back-end field too much.  
