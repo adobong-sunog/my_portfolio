@@ -22,7 +22,7 @@ i {
     font-size: 30px;
 }
 
-h4 {
+h3 {
     text-align: center;
     color: aliceblue;
 }
@@ -49,7 +49,9 @@ hr {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background: #212529;
+    background-color: #212529;
+    color: aliceblue;
+    text-align: center;
 }
 
 .list {
@@ -65,12 +67,13 @@ hr {
     text-decoration: none;
     color: aliceblue;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-link::after {
     content: '';
     width: 100%;
-    height: 1px;
+    height: 3px;
     background-color: rgb(3, 253, 16);
     border-radius: 4px;
     position: absolute;
@@ -154,6 +157,8 @@ hr {
 /** Footer **/
 .footer {
     display:flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     left: 0;
     bottom: 0%;
@@ -240,9 +245,25 @@ hr {
 }
 
 /** Images **/
+#backgroundIMG {
+    background: url('https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/non-4k/original/23.jpg?3') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroind-size: cover;
+}
+
+#backgroundIMG2 {
+    background: url('https://wallpaperaccess.com/full/812556.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroind-size: cover;
+}
+
 #skillsetIMG {
-    max-width: 85px;
-    max-height: 85px;
+    max-width: 30px;
+    max-height: 30px;
     height: auto;
     width: auto;
 }
@@ -254,8 +275,17 @@ hr {
     width: auto;
 }
 
-/** Course links **/
 #courseRefs {
     text-decoration: none;
-    color: rgb(26, 156, 35);
+    font-weight: bold;
+}
+
+#projects-bg {
+    background-color: rgb(30, 30, 30);
+}
+
+#ssets {
+    margin: 10px;
+    list-style: none;
+    font-weight: 500;
 }

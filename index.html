@@ -8,30 +8,30 @@
         <link href="static/style.css" rel="stylesheet">
         <title>Portfolio</title>
     </head>
-    <body>
+    <body id="body">
         <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 100;">
-            <div class="container-fluid">
-              <!-- Default homepage link for now -->
-              <a class="navbar-brand" style="font-size: 25px;" href="/my_portfolio">Daniel Salvacion</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 100;">
+        <div class="container-fluid">
+            <!-- Default homepage link for now -->
+            <a class="navbar-brand" style="font-size: 25px;" href="/my_portfolio">Daniel Salvacion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav list">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skillset">Skillset</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" onclick="scrollSection('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollSection('skillset')">Skillset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollSection('projects')">Projects</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
+        </div>
+        </nav>
 
         <!-- Social links -->
         <div class="socials" id="socials">
@@ -63,20 +63,19 @@
             <!-- Typed.js -->
             <div class="topSection">
                 <br><br><br><br><br>
-                <h1 style="text-align: center; color: aliceblue;">Hello there,</h1>
+                <h1 style="text-align: center; color: aliceblue;">Hello there</h1>
                 <hr style="color: black; border: solid 5px black; width: 70%; height: 5px;">
                 <br><br>
                 <div class="typedjs">
                     <h1 style="font-size: 8vh;">I'm a <span class="element"></span></h1>
                 </div>
-                <br><br><br><br><br><br><br>
-                <a  class="toAbout" href="#about"><i class="bi bi-arrow-down-circle-fill" style="font-size: 50px;"></i></a>
+                <a class="toAbout" onclick="scrollSection('about')"><i class="bi bi-arrow-down-circle-fill" style="font-size: 60px; cursor: pointer; margin-top: 13%;"></i></a>
                 <br><br>
-                <hr style="color: black; border: solid 5px black; width: 70%; height: 5px; bottom: 0;">
             </div>
 
 
             <!-- About -->
+            <div id="backgroundIMG">
             <br><br><br>
             <section id="about"></section>
             <br><br><br><br>
@@ -85,62 +84,74 @@
             <br><br>
             <div class="card text-center">
                 <div class="card-body">
-                  <br>
-                  <h3 class="card-title">An aspiring web developer</h3>
-                  <hr><br>
-                  <p class="card-text">I'm currently a student who's also a self-taught back-end developer that ended up picking front-end development skills along the way. I enjoy web development as a whole (slightly more biased towards the back-end). I look forward to improving my web development, specifically programming skills as a whole.
-                  </p>
-                  <p class="card-text">Other things that I enjoy doing are playing musical instruments (guitar & keyboard), reading action and thriller books and playing video games when there's spare time available.</p>
-                  <br>
-                  <h3 class="card-title">Where it all started</h3>
-                  <hr><br>
-                  <p class="card-text">It all started a month after a long school holiday where I got bored after playing video games 24/7 so I started searching about computer science videos in YouTube as I had interest in it after completing a simple python program for my computer science final exam. CS50 lectures by Harvard University showed up on my recommendations a few days later and the momentum of learning computer science began. After completing <a id="courseRefs" href="https://cs50.harvard.edu/x/" target="_blank"><strong>CS50x</strong></a>, I studied back-end development through YouTube videos and other free lectures, was told about <a id="courseRefs" href="https://cs50.harvard.edu/web/" target="_blank"><strong>CS50w</strong></a> and <a id="courseRefs" href="https://www.theodinproject.com" target="_blank"><strong>The Odin Project</strong></a> and that's where my focus on web development started.</p>
+                    <br>
+                    <h3 class="card-title">An aspiring web developer</h3>
+                    <hr><br>
+                    <p class="card-text">I'm currently a student who's also a self-taught web developer. I enjoy web development as a whole (slightly more biased towards the back-end). I look forward to improving my web development skills even further through self studying or collaborating with other like-minded people.
+                    </p>
+                    <p class="card-text">Other things that I enjoy doing are playing musical instruments (guitar & keyboard), reading action and thriller books and playing video games when there's spare time available.</p>
+                    <br>
+                    <h3 class="card-title">Random facts</h3>
+                    <hr><br>
+                    <p class="card-text">First programming language: <span style="color: rgb(245, 245, 71);">Pyt</span><span style="color: rgb(63, 109, 248);">hon</span></p>
+                    <p class="card-text">First front-end framework: <span style="color: rgb(0, 200, 255);">React</span></p>
+                    <p class="card-text">First back-end framework: <span style="color: rgb(26, 156, 35);">Django</span></p>
+                    <p class="card-text">Resources used to learn web development: <a id="courseRefs" style="color: rgb(43, 109, 194);" href="https://cs50.harvard.edu/web" target="_blank">CS50w</a>, <a id="courseRefs" style="color: rgb(241, 46, 46);" href="https://www.youtube.com" target="_blank">YouTube</a>, <a id="courseRefs" href="https://www.theodinproject.com" style="color: rgb(209, 180, 13);" target="_blank">The Odin Project</a></p>
                 </div>
             </div>
 
             <!-- Skillset -->
             <br><br><br>
+            </div>
+            <div id="backgroundIMG2">
             <section id="skillset"></section>
             <br><br><br><br>
-            <h1 style="text-align: center; color: aliceblue;">Skillset</h1>
+            <h1 style="text-align: center; color: aliceblue;" id="skillset">Skillset</h1>
             <hr>
             <br>
             <div class="container">
                 <div class="row">
                     <div class="box">
                         <br>
-                        <h4>Front-end</h4>
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html"> &nbsp;&nbsp;
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="jscript">
-                        <br><br>
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="bootstrap">
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt="vue">
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react">
-
+                        <h3>Front-end</h3>
+                        <ul>
+                            <li id="ssets">HTML/CSS <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html"><img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css"></li>
+                            <li id="ssets">Javascript <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="jscript"></li>
+                            <li id="ssets">Bootstrap <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="bootstrap"></li>
+                            <li id="ssets">Vue.js <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt="vue"></li>
+                            <li id="ssets">React.js <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react"></li>
+                        </ul>
                     </div>
                     <div class="box">
                         <br>
-                        <h4>Back-end</h4>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img id="skillsetIMG" src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="mongodb"><br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;<img id="skillsetIMG" src="https://miro.medium.com/max/1200/1*1OBwwxzJksMv0YDD-XmyBw.png" alt="django">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img id="skillsetIMG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16jGVAG9pol4earWtTK6iPUB27WUH7c9M_ax-gLB8qqEu8YZDfLbUY2jhd1uDabci3h8&usqp=CAU" alt="postgresql">
+                        <h3>Back-end</h3>
+                        <ul>
+                            <li id="ssets">Node.js <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs"></li>
+                            <li id="ssets">Express <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="express"></li>
+                            <li id="ssets">Django <img id="skillsetIMG" src="https://miro.medium.com/max/1200/1*1OBwwxzJksMv0YDD-XmyBw.png" alt="django"></li>
+                            <li id="ssets">Mongoose <img id="skillsetIMG" src="https://pbs.twimg.com/profile_images/946432748276740096/0TXzZU7W_400x400.jpg" alt="mongoose"></li>
+                            <li id="ssets">MongoDB <img id="skillsetIMG" src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="mongodb"></li>
+                            <li id="ssets">PostgreSQL <img id="skillsetIMG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16jGVAG9pol4earWtTK6iPUB27WUH7c9M_ax-gLB8qqEu8YZDfLbUY2jhd1uDabci3h8&usqp=CAU" alt="postgresql"></li>
+                        </ul>
                     </div>
                     <div class="box">
                         <br>
-                        <h4>Misc</h4>
-                        <img id="skillsetIMG" src="https://blog.scitools.com/wp-content/uploads/2021/12/Git-Icon-1788C.png" alt="git"> &nbsp;
-                        <img id="skillsetIMG" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
-                        <img id="skillsetIMG" src="https://cdn.freebiesupply.com/logos/large/2x/linux-tux-2-logo-png-transparent.png" alt="linux"> <br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="skillsetIMG" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="docker">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img id="skillsetIMG" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes">
+                        <h3>Misc</h3>
+                        <ul>
+                            <li id="ssets">Git <img id="skillsetIMG" src="https://blog.scitools.com/wp-content/uploads/2021/12/Git-Icon-1788C.png" alt="git"></li>
+                            <li id="ssets">GitHub <img id="skillsetIMG" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></li>
+                            <!-- <li id="ssets">Linux <img id="skillsetIMG" src="https://cdn.freebiesupply.com/logos/large/2x/linux-tux-2-logo-png-transparent.png" alt="linux"></li> -->
+                            <li id="ssets">Docker <img id="skillsetIMG" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="docker"></li>
+                            <li id="ssets">Firebase <img id="skillsetIMG" src="https://www.gstatic.com/devrel-devsite/prod/vb4911e76f75cbf10455736b1097dbb3769b606e3b49cb0474e4669a8e63a54e6/firebase/images/touchicon-180.png" alt="firebase"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <br><br><br>
+            </div>
 
             <!-- Projects -->
-            <br><br><br>
+            <div id="projects-bg">
             <section id="projects"></section>
             <br><br><br><br>
             <h1 style="text-align: center; color: aliceblue;">Projects</h1>
@@ -153,26 +164,27 @@
                   <p class="card-text">TO DO</p>
                 </div>
             </div>
-        </div>
-        <br><br><br>
+            <br><br><br>
         
-        <br><br><br>
-        <div class="scrollbutton">
-            <a href="#" class="scrollup"><i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i></a>
+            <br><br><br>
+            <div class="scrollbutton">
+                <a class="scrollup"><i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i></a>
+            </div>
+            <div class="footer">
+                <h5>&copy; 2022 - Daniel Salvacion</h5>
+            </div>
+            </div>
         </div>
-        <div class="footer">
-            <p>Footer</p>
-        </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="static/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed(".element",{
-        strings: ["student.","musician.","programmer."] ,
-        typeSpeed: 70,
-        backSpeed: 70,
-        loop: true
-      })
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="static/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".element",{
+                strings: ["student.","musician.","programmer."] ,
+                typeSpeed: 80,
+                backSpeed: 80,
+                loop: true
+            })
+        </script>
     </body>
 </html>
